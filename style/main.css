@@ -1211,8 +1211,8 @@ footer.footer .social_copyrights .copyrights {
     display: none;
     position: absolute;
     top: 0;
-    left: 185px;
-    background: #ff742b;
+    left: 0;
+    background: linear-gradient(#ff8331, #ff6626);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07);
   }
   .mobile_navigation ul li {
@@ -1229,7 +1229,7 @@ footer.footer .social_copyrights .copyrights {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     padding: 15px;
     width: 100%;
     outline: none;
@@ -1248,33 +1248,32 @@ footer.footer .social_copyrights .copyrights {
   }
   .mobile_navigation ul li ul.sub-menu {
     position: absolute;
-    top: 36px;
-    left: 15px;
+    top: -2px;
+    left: 100%;
     z-index: 9;
     display: none;
-    background: rgba(255, 255, 255, 0.9);
+    background: linear-gradient(#ff8331, #ff6626);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.07);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
   }
   .mobile_navigation ul li ul.sub-menu::before {
     content: "";
     display: block;
     position: absolute;
-    top: -5px;
-    left: 34px;
+    top: 15px;
+    left: -10px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 4.5px 5px 4.5px;
-    border-color: transparent transparent rgba(255, 255, 255, 0.9) transparent;
+    border-width: 4.5px 0 4.5px 5px;
+    border-color: transparent transparent transparent #ffea00;
   }
   .mobile_navigation ul li ul.sub-menu li a {
-    color: #7b7a79;
-  }
-  .mobile_navigation ul li ul.sub-menu li:hover {
-    border-color: transparent;
+    color: #FFFFFF;
+    text-transform: lowercase;
   }
   .mobile_navigation ul li ul.sub-menu li:hover a {
-    color: #ff742b;
+    color: #ffea00;
   }
 }
 @media only screen and (max-width: 700px) {

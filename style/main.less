@@ -1285,8 +1285,8 @@ footer.footer {
 		display: none;
 		position: absolute;
 		top: 0;
-		left: 185px;
-		background: @orange;
+		left: 0;
+		background: linear-gradient(#ff8331,#ff6626);
 		box-shadow: 3px 3px 0 rgba(0,0,0,0.07);
 		li {
 			display: flex;
@@ -1300,7 +1300,7 @@ footer.footer {
 				.quicksand_font();
 				text-transform: uppercase;
 				text-decoration: none;
-				font-size: 16px;
+				font-size: 14px;
 				padding: 15px;
 				width: 100%;
 				outline: none;
@@ -1319,32 +1319,34 @@ footer.footer {
 			}
 			ul.sub-menu {
 				position: absolute;
-				top: 36px;
-				left: 15px;
+				top: -2px;
+				left: 100%;
 				z-index: 9;
 				display: none;
-				background: rgba(255, 255, 255, 0.9);
+				background: linear-gradient(#ff8331,#ff6626);
 				box-shadow: 3px 3px 0 rgba(0,0,0,0.07);
+				border-left: 1px solid rgba(255, 255, 255, 0.3);
 				&::before {
 					content: "";
 					display: block;
 					position: absolute;
-					top: -5px;
-					left: 34px;
+					top: 15px;
+					left: -10px;
 					width: 0;
 					height: 0;
 					border-style: solid;
-					border-width: 0 4.5px 5px 4.5px;
-					border-color: transparent transparent rgba(255,255,255,0.9) transparent;
+					border-width: 4.5px 0 4.5px 5px;
+					border-color: transparent transparent transparent @yellow;
 				}
 				li {
 					a {
-						color: #7b7a79;
+						color: @white;
+						text-transform: lowercase;
 					}
 					&:hover {
-						border-color: transparent;
+						// border-color: transparent;
 						a {
-							color: @orange;
+							color: @yellow;
 						}
 					}
 				}
